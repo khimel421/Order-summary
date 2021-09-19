@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url('images/pattern-background-desktop.svg');
+    min-width: 100vh;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  
+}
+
+
+
+.box{
+    margin-top: 10px;
+    max-width: 425px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.description{
+    padding: 27px;
+    text-align: center;
+}
+
+.flex{
+    padding: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.value{
+    display: flex;
+    align-items: center;
+}
+
+.price{
+    margin-left: 25px;
+}
+
+.hero_img img{
+    width: 100%;
+}
+
+.button{
+    text-align: center;
+    padding: 27px;
+}
+
+
+.proceed-btn{
+    display: block;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    width: 50%;
+    margin: auto;
+    width: 271px;
+    padding: 12px;
+    border-radius: 25px;
+    transition: background-color .3s ease;
+}
+
+a.proceed-btn:hover{
+    background-color: rgb(238, 10, 86);
+}
+
+.cancel-btn{
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition:  .3s ease;
+}
+
+a.cancel-btn:hover{
+    color: black;
+}
+
+a.change:hover{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+
+
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+
+    .box{
+        margin-left: 20px;
+        background-color: red;
+    }
+
+}
+
